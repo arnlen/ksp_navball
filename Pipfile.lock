@@ -1,0 +1,71 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "6cb96d693fb4609915657d782b9d5c3aca068a5bf7f79f46e4191308f113a14b"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pygame": {
+            "hashes": [
+                "sha256:22d5195a72b9a300cb7e87d7bde1373930a02b1054e95bc431d26a321ae15d07",
+                "sha256:2a8292d0b5a67e0b96d2cae09bbd8252e99daffe95fd88a00166b92fb6497b40",
+                "sha256:2ee479b0120cc82f04f7c41a09d75fc85c9992ed1a26c9527fb2b7b0637e6739",
+                "sha256:4847550da37d3bc702e0201a035de005f184b19e86625a3c70ab1d318317ee91",
+                "sha256:4d4985d0e0e5470c5ef872d65a863f1722d85a136327eb3bb5dcafc2853f2e55",
+                "sha256:5cf670378c8aabdf1bdf283eeec690c93f95dfe8de77c66bc837c91274c8ca49",
+                "sha256:643de45518d11cb7784e3fe77aef43fe3cb7e0d6b495ad4361ade931f16c334b",
+                "sha256:66746c32d21d8193ab066fdf90da96ed993c4818adb13bf4eaa472f306f7f421",
+                "sha256:73c86fdbbfc5ae77d0271fb0964f4a3fc639cc2277ffeb60ee4e981fb0d27640",
+                "sha256:751021819bdc0cbe5cbd51904abb6ff9e9aee5b0e8955af02284d0e77d6c9ec2",
+                "sha256:792f8d1a455d5d1de9c8f2cc051c6dac2b90705afc4cf9fe4933aeb296b0ae3f",
+                "sha256:831c906d4a70aa58f9382e79671525805583b58ac8c895b4c4bd066e8858a1a1",
+                "sha256:834ee27388563f15e6c736aa4850e4cf95609f67056ee73ff646528bb658e79e",
+                "sha256:925e6be8e8c3f1cec016f5a68f369491ae34600e04633759e0e07780ce7bd083",
+                "sha256:96a8f61c729d82576ee3d5cfe3b0b91e7b52a4fbf3d618a3b659347eeb4fd937",
+                "sha256:97615fb075808b4709f6115e3a11a253bfac78614f430bededbc0ac76a5100af",
+                "sha256:c49ece0e4ba71be90ed4bf6a905c35e5c1a95c4c0b0b42eaff74ab69c5793847",
+                "sha256:e8626d4d4e7617ebf103d96a493b9cbe53f9b39cd46ecbff232e33ba4a082530",
+                "sha256:ea7da8dd7fbc12becccf691b4c76fbb381e369e124c30e21f9ed263b6e7e139a"
+            ],
+            "index": "pypi",
+            "version": "==1.9.3"
+        },
+        "pyopengl": {
+            "hashes": [
+                "sha256:5b3a14a4e4c87cf25ca41bc5878583df0e434624b13fcc55d1a672f79ad1b76f",
+                "sha256:9b47c5c3a094fa518ca88aeed35ae75834d53e4285512c61879f67a48c94ddaf",
+                "sha256:efa4e39a49b906ccbe66758812ca81ced13a6f26931ab2ba2dba2750c016c0d0"
+            ],
+            "index": "pypi",
+            "version": "==3.1.0"
+        },
+        "pyopengl-accelerate": {
+            "hashes": [
+                "sha256:0922c043a58f2d124614ee784b50da23b10a0f132fe934ac265b1f1d28afe96b",
+                "sha256:2d24cce7e001eb86a42ee18798a09c51b86fc760301670339e08b8e8960f8a41",
+                "sha256:303b6ba31b4b61c51f2af5888b85b01de1f43eaad2f6a618481077280732ce88",
+                "sha256:8ab54b57e0a02092a71107ce375000fc20922feff0831f09c38126e04fadf2f2",
+                "sha256:927f4670b893d46e2f6273ae938bf0a1db27ffae3336eba94813ccef6260c410",
+                "sha256:939d1656e7435a8c08ab03bd5268e3c5debb1ea26d662619cd1f590f542f66e6",
+                "sha256:b0d3b45bca138be911e8e3bf9969078af5f7a217eaa25ad36d1c8bf622740275",
+                "sha256:e747e45c30121d275a5029c20b373376edd9be2108c5446611c6e7ae9f1d1536",
+                "sha256:eba0bea62868e6cdbc9ff8a32bba349405b99fa823618624812c387c77a0ddd4",
+                "sha256:f5c7f2996b34d04ffb1dbfe7aac1ede314efa5e00e20fb7455184caaba0e8959"
+            ],
+            "index": "pypi",
+            "version": "==3.1.0"
+        }
+    },
+    "develop": {}
+}
