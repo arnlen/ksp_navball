@@ -9,6 +9,7 @@ pyopengl-accelerate = "*"
 pygame = "*"
 image = "*"
 numpy = "*"
+pymunk = "*"
 
 [dev-packages]
 

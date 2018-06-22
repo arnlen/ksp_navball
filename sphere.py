@@ -3,8 +3,9 @@ from OpenGL.GLU import *
 from OpenGL.GL import *
 from PIL import Image
 import numpy
+import math
 
-class MyWnd:
+class NavBall:
     def __init__(self):
         self.texture_id = 0
         self.angle = 0
@@ -15,13 +16,13 @@ class MyWnd:
         glutInitWindowSize(400, 400)
         glutCreateWindow(b'Minimal sphere OpenGL')
         self.lightning()
-        self.texture_id = self.read_texture('data/worldmap1.jpg')
+        self.texture_id = self.read_texture('navball.png')
         glutDisplayFunc(self.draw_sphere)
         glMatrixMode(GL_PROJECTION)
         gluPerspective(40, 1, 1, 40)
         glutMainLoop()
 
-    def lightning():
+    def lightning(self):
         glEnable(GL_DEPTH_TEST)
         glEnable(GL_LIGHTING)
         glEnable(GL_BLEND)
@@ -31,6 +32,22 @@ class MyWnd:
         glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0.05)
         glEnable(GL_LIGHT0)
         return
+
+    def read_texture(self, filename):
+        img = Image.open(filename)
+        img_data = numpy.array(list(img.getdata()), numpy.int8)
+        texture_id = glGenTextures(1)
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1)
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP)
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP)
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT)
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT)
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
+        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
+        glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL)
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, img.size[0], img.size[1], 0,
+                     GL_RGB, GL_UNSIGNED_BYTE, img_data)
+        return texture_id
 
     def draw_sphere(self):
         glMatrixMode(GL_MODELVIEW)
