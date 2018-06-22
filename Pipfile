@@ -7,6 +7,8 @@ name = "pypi"
 pyopengl = "*"
 pyopengl-accelerate = "*"
 pygame = "*"
+image = "*"
+numpy = "*"
 
 [dev-packages]
 
