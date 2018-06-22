@@ -52,7 +52,7 @@ def display_scene():
 
 	sphere()
 
-	# glPopMatrix()
+	glPopMatrix()
 	glutSwapBuffers()
 
 	glutTimerFunc(100, loop, 1)
