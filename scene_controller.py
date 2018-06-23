@@ -49,4 +49,4 @@ class SceneController():
 		glEnable(GL_DEPTH_TEST)
 
 	def _init_navball(self):
-		self.navball = NavBall('navball4.jpg')
+		self.navball = NavBall('images/navball4.jpg')
