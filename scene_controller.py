@@ -4,7 +4,7 @@ from OpenGL.GL import *
 import sys
 from PIL import Image as Image
 import numpy
-from sphere import Sphere
+from navball import NavBall
 from time import sleep
 
 class SceneController():
@@ -16,17 +16,17 @@ class SceneController():
 
 		self._init_glut()
 		self._configure_gl()
-		self._init_sphere()
+		self._init_navball()
 
 		glutMainLoop()
 
 	def draw_scene(self):
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-		self.draw_sphere()
+		self.draw_navball()
 		glutSwapBuffers()
 
-	def draw_sphere(self):
-		self.sphere.create()
+	def draw_navball(self):
+		self.navball.create()
 		glRotatef(1, 3, 1, 1)
 		sleep(0.01)
 		glutPostRedisplay()
@@ -48,5 +48,5 @@ class SceneController():
 		glEnable(GL_CULL_FACE)
 		glEnable(GL_DEPTH_TEST)
 
-	def _init_sphere(self):
-		self.sphere = Sphere('navball2.png')
+	def _init_navball(self):
+		self.navball = NavBall('navball4.jpg')
