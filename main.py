@@ -1,4 +1,3 @@
-from sphere import NavBall
+from scene_controller import SceneController
 
-navball = NavBall()
-navball.run_scene()
+scene_controller = SceneController()

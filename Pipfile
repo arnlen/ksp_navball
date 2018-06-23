@@ -10,6 +10,7 @@ pygame = "*"
 image = "*"
 numpy = "*"
 pymunk = "*"
+pycodestyle = "*"
 
 [dev-packages]
 

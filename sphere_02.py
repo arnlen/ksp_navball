@@ -52,7 +52,7 @@ def display_scene():
 
 	sphere()
 
-	glPopMatrix()
+	# glPopMatrix()
 	glutSwapBuffers()
 
 	glutTimerFunc(100, loop, 1)
@@ -60,13 +60,13 @@ def display_scene():
 	return
 
 def sphere():
-	glPushMatrix()
+	# glPushMatrix()
 
-	tex = read_texture('navball2.png')
+	read_texture('navball2.png')
+
 	qobj = gluNewQuadric()
 	gluQuadricTexture(qobj, GL_TRUE)
 	glEnable(GL_TEXTURE_2D)
-
 	gluSphere(qobj, 1, 50, 50)
 	gluDeleteQuadric(qobj)
 	glDisable(GL_TEXTURE_2D)
