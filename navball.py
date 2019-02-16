@@ -4,7 +4,7 @@ from PIL import Image as Image
 import numpy
 
 class NavBall():
-	"""Sphere object, base of the Navball"""
+	"""Main NavBall object, based on a sphere"""
 	def __init__(self, texture_path):
 		self.texture_path = texture_path
 		self._read_texture_file()
